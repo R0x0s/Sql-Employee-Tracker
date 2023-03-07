@@ -18,7 +18,8 @@
     "homepage": "https://github.com/wevexOP/MySQL-Employee-Tracker",
     "dependencies": {
         "console.table": "^0.10.0",
-        "inquirer": "^7.3.3",
-        "mysql": "^2.18.1"
+        "inquirer": "^8.2.4",
+        "mysql": "^2.18.1",
+        "mysql2": "^3.2.0"
     }
 }
