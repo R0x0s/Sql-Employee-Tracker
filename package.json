@@ -1,25 +1,26 @@
 {
-    "name": "mysql-employee-tracker",
+    "name": "hw--12-employee-tracker",
     "version": "1.0.0",
-    "description": "With so much data in todays world, I would only make sense for those who deal with large amounts of data on a daily basis to have a useful application that helps them sort through said data. Using this application allows users to get quick and easy access to all of their database properties and execute the required tasks needed. This specific application is designed so developers can see data relating to each employee of their company. Using JavaScript, Node.JS, Express.JS, and MySQL we can quickly and easily operate through large amounts of data in an organized fashion. ",
-    "main": "index.js",
+    "description": "",
+    "main": "server.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node server.js"
     },
     "repository": {
-        "type": "git",
-        "url": "git+https://github.com/wevexOP/MySQL-Employee-Tracker"
+      "type": "git",
+      "url": "git+https://github.com/andrewcmcghie/HW--12-Employee-Tracker.git"
     },
-    "author": "Dominic Paulazzo",
+    "author": "",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/wevexOP/MySQL-Employee-Tracker"
+      "url": "https://github.com/andrewcmcghie/HW--12-Employee-Tracker/issues"
     },
-    "homepage": "https://github.com/wevexOP/MySQL-Employee-Tracker",
+    "homepage": "https://github.com/andrewcmcghie/HW--12-Employee-Tracker#readme",
     "dependencies": {
-        "console.table": "^0.10.0",
-        "inquirer": "^8.2.4",
-        "mysql": "^2.18.1",
-        "mysql2": "^3.2.0"
+      "console.table": "^0.10.0",
+      "inquirer": "^7.3.3",
+      "mysql": "^2.18.1"
     }
-}
+  }
+  
