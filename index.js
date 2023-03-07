@@ -18,7 +18,9 @@ connection.connect(function (err) {
     start()
 });
 
+
 // function which prompts the user for what action they should take
+
 function start() {
     inquirer.prompt([
         {
@@ -100,6 +102,7 @@ function viewDept() {
 };
 
 // View list of employees by role
+
 function viewRole() {
     connection.query("SELECT * FROM role", function (err, res) {
         if (err) throw err
@@ -132,7 +135,9 @@ function viewRole() {
     });
 };
 
+
 // Select types of roles from database
+
 var roleArr = []
 function readRoles() {
     
@@ -145,7 +150,9 @@ function readRoles() {
     return roleArr
 };
 
+
 // Select managers from database
+
 var managerArr = []
 function readManager() {
    
@@ -158,7 +165,9 @@ function readManager() {
     return managerArr
 };
 
+
 // Add employee
+
 function addEmployee() {
     inquirer.prompt([
         {
@@ -199,7 +208,9 @@ function addEmployee() {
     });
 };
 
+
 // Add department
+
 function addDept() {
     inquirer.prompt([
         {
@@ -216,7 +227,9 @@ function addDept() {
     });
 };
 
+
 // Add role
+
 function addRole() {
     inquirer.prompt([
         {
@@ -233,7 +246,9 @@ function addRole() {
     });
 };
 
+
 // Update employee's role
+
 function updateEmployee() {
     connection.query("SELECT employee.first_name, role.title FROM employee INNER JOIN role on role.id = employee.role_id ", function (err, res) {
         if (err) throw err;
